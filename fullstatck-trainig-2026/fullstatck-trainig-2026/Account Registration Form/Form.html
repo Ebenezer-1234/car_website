@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./form.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+    <h1 class="head">Account Registration Form</h1>
+
+    <form class="form-container">
+      <!-- first name, last name, dob, email, gender, phone number, address, ext contact info, account type, id card type, id number, password
+    1. personal details, 2. account information -->
+
+      <div class="personal-info-section">
+        <!-- header, section title -->
+        <h1 class="section-title">Personal Details</h1>
+
+        <div class="form-group">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <select>
+            <option>Select Gender</option>
+            <option value="FEMALE">Female</option>
+            <option value="MALE">Male</option>
+          </select>
+          <input type="number" placeholder="phone Number" />
+          <input type="date" placeholder="Date of birth" />
+          <textarea cols="60" rows="3" placeholder="Full Address"></textarea>
+        </div>
+      </div>
+
+      <div class="ext-contact-section">
+        <h1 class="section-title">External Details</h1>
+        <div class="form-group">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="number" placeholder="External Phone Number" />
+          <input type="email" placeholder="external email" />
+        </div>
+      </div>
+
+      <div class="account-section">
+        <h1 class="section-title">Account Information</h1>
+        <div class="form-group">
+          <label>Account Type</label>
+          <select>
+            <option value="1">Savings</option>
+            <option value="2">Current</option>
+            <option value="3">Domiciliary</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>ID Type</label>
+          <select>
+            <option value="1">Voter's Card</option>
+            <option value="2">Driver's License</option>
+            <option value="3">International passport</option>
+            <option value="3">others</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="password-section">
+        <h5 class="hide">Enter Password here</h5>
+        <div class="form-group">
+          <input type="password" placeholder="password" />
+          <input type="password" placeholder="re-enter password" />
+        </div>
+      </div>
+
+      <button class="button">Submit</button>
+    </form>
+  </body>
+</html>
